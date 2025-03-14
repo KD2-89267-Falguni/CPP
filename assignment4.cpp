@@ -76,7 +76,10 @@ int main(){
              cout<<"Enter number of Time Objects: ";
              cin>>n;
 
-             Time **ptr= new Time*[2];
+             Time **ptr= new Time*[3];
+            
+             delete[] ptr;
+             ptr = NULL;
                   
 
     int choice;
@@ -91,7 +94,7 @@ int main(){
               switch (choice)
               {
               case 1:
-              for (int i = 0; i < 2; i++)
+              for (int i = 0; i < n; i++)
               {
                   ptr[i]=new Time();
                   ptr[i]->accept();
