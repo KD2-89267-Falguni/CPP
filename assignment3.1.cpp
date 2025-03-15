@@ -47,39 +47,39 @@ public:
                 cin >> choice;
 
 
-                switch (choice)
-                {
-                case 1:{
+                switch (choice){
+                
+                case 1:
                     Box box1 ;
                     cout<<"Volume:"<<box1.calculateVolume() <<endl;
                     break;
-                }
-                case 2:{
+                
+                case 2:
                     int side;
                     cout<<"Enter the side value:";
                     cin>>side;
                     Box box2(side);
                     cout<<"Volume:"<<box2.calculateVolume()<<endl;
                     break;
-             }
-                case 3:{
+                      
+                case 3:
                     int l,w,h;
                     cout<<"Enter length,width,height:";
                     cin>>l>>w>>h;
                     Box box3(l,w,h);
                     cout<<"Volume:"<<box3.calculateVolume()<<endl;
                     break;
-                }
-                case 4:{
+                
+                case 4:
                      cout << "Exiting program.\n";
-                }
+                
                 break;
 
-                default: cout << "Invalid choice! Try again.\n";
+                default:+
                     
                 }
 
             } while (choice!=4);
             return 0;
             
-           }
+        }
