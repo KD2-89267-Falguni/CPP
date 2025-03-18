@@ -46,7 +46,7 @@ public:
         birthdate.acceptDate();
     }
 
-    void displayPersonDetails() const {
+    void displayPersonDetails() {
         cout << "Name: " << name << "\nAddress: " << address << "\nBirthdate: ";
         birthdate.displayDate();
         cout << endl;
@@ -83,7 +83,7 @@ public:
         endDate->acceptDate();
     }
 
-    void displayStudentDetails() const {
+    void displayStudentDetails()  {
         cout << "ID: " << id << "\nMarks: " << marks << "\nCourse: " << course << "\nJoining Date: ";
         joiningDate->displayDate();
         cout << "\nEnd Date: ";
